@@ -8,6 +8,17 @@ function App() {
 
   return (
     <>
+    <div style={{display:"flex",justifyContent:"center"}}>
+      <Card style={{padding: 20 , width: 500}}>
+        <Typography variant="h5">
+          Welcome to counter game
+          </Typography>
+          <br/>
+          <Button count={count} setCount={setCount}/> 
+        </Card> 
+
+
+    </div>
       
     </>
   )
