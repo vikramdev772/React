@@ -18,7 +18,7 @@ function Button({count,setCount}){
   return <>
     <div style={{display:"flex",justifyContent:"space-between"}}>
       <Increase count = {count} setCount ={setCount}/>
-      <Dcrease count = {count} setCount ={setCount}/>
+      <Decrease count = {count} setCount ={setCount}/>
 
     </div>
   
@@ -32,6 +32,20 @@ function Increase({count,setCount}){
     setCount(count+1) 
   }}>
     Increase counter
+  </Button>
+    
+  </div>
+  
+  </>
+}
+
+function Decrease({count,setCount}){
+  return <>
+  <div>
+  <Button variant={"contained"} onClick={()=>{
+    setCount(count-1) 
+  }}>
+    Decrease counter
   </Button>
     
   </div>
