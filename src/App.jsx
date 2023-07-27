@@ -12,6 +12,7 @@ function App() {
           <Typography variant="h5">Welcome to counter game</Typography>
           <br />
           <Buttons count={count} setCount={setCount} />
+          <CountComponent/>
         </Card>
       </div>
     </>
@@ -24,6 +25,7 @@ function Buttons({ count, setCount }) {
       <div style={{ display: "flex", justifyContent: "space-between" }}>
         <Increase count={count} setCount={setCount} />
         <Decrease count={count} setCount={setCount} />
+      
       </div>
     </>
   );
@@ -62,5 +64,16 @@ function Decrease({ count, setCount }) {
     </>
   );
 }
+
+function CountComponent(){
+  return <>
+  <div>
+    <Typography variant='h5' textAlign={"center"}>
+      {count}
+    </Typography>
+  </div>
+  </>
+}
+
 
 export default App;
