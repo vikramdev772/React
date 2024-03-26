@@ -7,6 +7,7 @@ import Use from "./components/state/Use";
 import Operator from "./components/Ternary/Operator";
 import MouseEvent from "./components/events/MouseEvent";
 import Home from "./components/eventListensers/Home";
+import Form from "./components/formEvents/Form";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -34,6 +35,7 @@ function App() {
     {/* <Operator/> */}
     <MouseEvent/>
     <Home/>
+    <Form/>
     </>
   );
 }
