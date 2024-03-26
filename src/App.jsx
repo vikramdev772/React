@@ -3,6 +3,7 @@ import {Button,Card,Typography} from '@mui/material'
 import "./App.css";
 import Parent from "./components/props/Parent";
 import Main from "./components/state/Main";
+import Use from "./components/state/Use";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -25,7 +26,8 @@ function App() {
         </Card>
       </div> */}
     <Parent name={user.name}/>
-    <Main/>  
+    <Main/>
+    <Use/>  
 
     </>
   );
