@@ -4,6 +4,7 @@ import "./App.css";
 import Parent from "./components/props/Parent";
 import Main from "./components/state/Main";
 import Use from "./components/state/Use";
+import Operator from "./components/Ternary/Operator";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -28,6 +29,7 @@ function App() {
     <Parent name={user.name}/>
     <Main/>
     <Use/>  
+    <Operator/>
 
     </>
   );
