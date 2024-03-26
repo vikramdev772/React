@@ -6,6 +6,7 @@ import Main from "./components/state/Main";
 import Use from "./components/state/Use";
 import Operator from "./components/Ternary/Operator";
 import MouseEvent from "./components/events/MouseEvent";
+import Home from "./components/eventListensers/Home";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -32,6 +33,7 @@ function App() {
     <Use/>  
     {/* <Operator/> */}
     <MouseEvent/>
+    <Home/>
     </>
   );
 }
