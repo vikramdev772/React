@@ -1,20 +1,31 @@
 import { useState } from "react";
 import {Button,Card,Typography} from '@mui/material'
 import "./App.css";
+import Parent from "./components/props/Parent";
 
 function App() {
   const [count, setCount] = useState(0);
 
+
+  const user={
+    name:"Bruce",
+    city:"new york",
+    area:"Time squares"
+  }
+
   return (
     <>
-      <div style={{ display: "flex", justifyContent: "center" }}>
+      {/* <div style={{ display: "flex", justifyContent: "center" }}>
         <Card style={{ padding: 20, width: 500 }}>
           <Typography variant="h5">Welcome to counter game</Typography>
           <br />
           <Buttons count={count} setCount={setCount} />
           <CountComponent/>
         </Card>
-      </div>
+      </div> */}
+    <Parent name={user.name}/>
+      
+
     </>
   );
 }
