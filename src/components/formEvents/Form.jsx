@@ -4,6 +4,13 @@ const Form = () => {
 
     const [user,setUser] = useState("")
 
+    const [d,sd]=useState("");
+    
+    const c=()=>{
+        sd(user)
+
+    }
+
     const changeHandler=(event)=>{
         event.target.value
         console.log(event.target.value)
@@ -13,7 +20,7 @@ const Form = () => {
   return (
     <div>
         <div className="flex-1,items-center justify-center h-screen flex-col">
-
+            <h1>{d}</h1>
             <section>
                 <div>
                     <input type="text"  placeholder='Enter your name'
@@ -21,7 +28,7 @@ const Form = () => {
                     />
                     <br />
                     <br />
-                    <button >submit</button>
+                    <button onClick={c}>submit</button>
                 </div>
 
                 <br />
